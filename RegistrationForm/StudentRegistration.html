@@ -1,0 +1,102 @@
+<html>
+
+  <head>
+
+  <script type="text/javascript" src="validate.js"></script>
+
+  </head>
+
+  <body>
+
+  <form action="#" name="StudentRegistration" onSubmit="Success()">
+
+<table cellpadding="2.5" width="20%" bgcolor="blue" align="center"
+
+  cellspacing="2">
+
+
+<tr>
+
+  <td colspan=2>
+
+  <center><font size=4><b>Student Registration Form</b></font></center>
+
+  </td>
+
+  </tr>
+
+
+<tr>
+
+  <td>Name:</td>
+
+  <td><input type=text name=textnames id="textname" size="30" required></td>
+
+  </tr>
+
+
+<tr> 
+                <!-- Enter Password. -->
+                <td>Password:</td> 
+                <td><input type = "password" name = password1 id="pass" size = 25 </td> 
+            </tr> 
+            <tr> 
+                <!-- To Confirm Password. -->
+                <td>Confirm Password:</td> 
+                <td><input type = "password" name = password2 id="pword" size = 25 ></td> 
+				<tr><td><input type="button" value="Check password" onclick="return checkPassword()"><td></tr>
+				<tr><td><input type="checkbox" onclick="showPass()">Show Pass</td><tr>
+            </tr> 
+
+<tr>
+
+  <td>Qualification</td>
+
+  <td><select name="Qualification" id="qualification" required>
+
+  <option value="-1" selected>Select</option>
+
+  <option value="Graduation">Graduation</option>
+
+  <option value="Post Graduation">Post Graduation</option>
+
+  </select></td>
+
+  </tr>
+
+
+<tr>
+
+  <td>Course</td>
+
+  <td><select name="Course" id ="course" required>
+
+  <option value="-1" selected>Select</option>
+
+  <option value="CSE">CSE</option>
+
+  <option value="IT">IT</option>
+
+  <option value="ETC">ETC</option>
+
+
+  </select></td>
+
+  </tr>
+<tr>
+
+<td>DOB<input type="text" id="txtDate" onblur = "ValidateDOB()" /></td>
+<span class="error" id="lblError"></span>
+<br />
+<br />
+<td><input type="button" id="btnValidate" value="Check dob" onclick="return ValidateDOB()" /></td>
+<br>
+<br>
+<tr><td><td><input type="button" id="value" onclick="return Success()" value="Submit" ></td></td></tr>
+  </table>
+
+  </form>
+
+  </body>
+
+  </html>
